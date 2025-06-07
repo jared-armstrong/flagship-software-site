@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "./ThemeToggle";
+import Logo from '../assets/Flagship Logo 3.svg'
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -30,23 +31,23 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link href="/">
+            <Link href="/" className="flex align-items">
+              <img src={Logo} alt="Flagship Software Logo" style={{ height: '160px' }} className="" />
               <span className="text-2xl font-bold text-[hsl(0,0%,11.4%)] dark:text-white cursor-pointer">
                 Flagship
               </span>
             </Link>
           </div>
-          
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href}>
                   <span
-                    className={`font-medium transition-colors duration-200 cursor-pointer ${
-                      isActive(item.href)
-                        ? "text-[hsl(24,100%,48%)]"
-                        : "text-[hsl(0,0%,11.4%)] dark:text-white hover:text-[hsl(24,100%,48%)]"
-                    }`}
+                    className={`font-medium transition-colors duration-200 cursor-pointer ${isActive(item.href)
+                      ? "text-[hsl(24,100%,48%)]"
+                      : "text-[hsl(0,0%,11.4%)] dark:text-white hover:text-[hsl(24,100%,48%)]"
+                      }`}
                   >
                     {item.name}
                   </span>
@@ -54,7 +55,7 @@ export default function Navigation() {
               ))}
             </div>
           </div>
-          
+
           <div className="flex items-center space-x-2">
             <ThemeToggle />
             <div className="md:hidden">
@@ -70,18 +71,17 @@ export default function Navigation() {
           </div>
         </div>
       </div>
-      
+
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navigation.map((item) => (
               <Link key={item.name} href={item.href}>
                 <span
-                  className={`block px-3 py-2 font-medium transition-colors duration-200 cursor-pointer ${
-                    isActive(item.href)
-                      ? "text-[hsl(24,100%,48%)]"
-                      : "text-[hsl(0,0%,11.4%)] dark:text-white hover:text-[hsl(24,100%,48%)]"
-                  }`}
+                  className={`block px-3 py-2 font-medium transition-colors duration-200 cursor-pointer ${isActive(item.href)
+                    ? "text-[hsl(24,100%,48%)]"
+                    : "text-[hsl(0,0%,11.4%)] dark:text-white hover:text-[hsl(24,100%,48%)]"
+                    }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}

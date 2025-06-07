@@ -15,10 +15,10 @@ function Router() {
   return (
     <Layout>
       <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/products" component={Products} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/blog" component={Blog} />
+        <Route path="/Flagship-Site/" component={Home} />
+        <Route path="/Flagship-Site/products" component={Products} />
+        <Route path="/Flagship-Site/contact" component={Contact} />
+        <Route path="/Flagship-Site/blog" component={Blog} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

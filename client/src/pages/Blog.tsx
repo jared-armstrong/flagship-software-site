@@ -51,24 +51,24 @@ export default function Blog() {
     <div className="pt-24 pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Blog</h1>
-          <p className="text-xl text-[hsl(0,0%,52.5%)]">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[hsl(0,0%,11.4%)] dark:text-white">Our Blog</h1>
+          <p className="text-xl text-[hsl(0,0%,52.5%)] dark:text-gray-300">
             Insights, tutorials, and perspectives from the world of software design and development.
           </p>
         </div>
 
         <div className="space-y-12">
           {blogPosts.map((post) => (
-            <article key={post.id} className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-              <div className="flex items-center text-[hsl(0,0%,52.5%)] text-sm mb-4">
+            <article key={post.id} className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 border border-gray-100 dark:border-gray-700">
+              <div className="flex items-center text-[hsl(0,0%,52.5%)] dark:text-gray-400 text-sm mb-4">
                 <time dateTime={post.date}>{post.date}</time>
                 <span className="mx-2">•</span>
                 <span>{post.readTime}</span>
               </div>
-              <h2 className="text-3xl font-bold mb-4 hover:text-[hsl(24,100%,48%)] transition-colors duration-200">
+              <h2 className="text-3xl font-bold mb-4 text-[hsl(0,0%,11.4%)] dark:text-white hover:text-[hsl(24,100%,48%)] transition-colors duration-200">
                 <a href="#" className="cursor-pointer">{post.title}</a>
               </h2>
-              <p className="text-[hsl(0,0%,52.5%)] text-lg leading-relaxed mb-6">
+              <p className="text-[hsl(0,0%,52.5%)] dark:text-gray-300 text-lg leading-relaxed mb-6">
                 {post.excerpt}
               </p>
               <a href="#" className="inline-flex items-center text-[hsl(24,100%,48%)] font-semibold hover:underline">
