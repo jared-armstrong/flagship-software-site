@@ -35,17 +35,28 @@ export default function Home() {
             </div>
             <div className="fade-in">
               <div className="relative">
-                <div className="w-full h-88 bg-gradient-to-br from-[hsl(24,100%,48%)]/10 to-[hsl(240,9%,96.1%)] rounded-3xl flex items-center justify-center">
-                  <div className="grid grid-cols-3 gap-4 p-8">
-                    <div className="h-16 bg-[hsl(24,100%,48%)]/20 rounded-xl"></div>
-                    <div className="h-12 bg-[hsl(24,100%,48%)]/30 rounded-xl mt-4"></div>
-                    <div className="h-20 bg-[hsl(24,100%,48%)]/10 rounded-xl"></div>
-                    <div className="h-12 bg-[hsl(24,100%,48%)]/40 rounded-xl"></div>
-                    <div className="h-16 bg-[hsl(24,100%,48%)]/20 rounded-xl"></div>
-                    <div className="h-14 bg-[hsl(24,100%,48%)]/30 rounded-xl"></div>
-                    <div className="h-18 bg-[hsl(24,100%,48%)]/10 rounded-xl"></div>
-                    <div className="h-10 bg-[hsl(24,100%,48%)]/50 rounded-xl mt-2"></div>
-                    <div className="h-16 bg-[hsl(24,100%,48%)]/20 rounded-xl"></div>
+                <div className="w-full h-96 bg-gradient-to-br from-[hsl(24,100%,48%)]/10 to-[hsl(240,9%,96.1%)] rounded-3xl flex items-center justify-center overflow-hidden">
+                  <div className="relative w-full h-full p-8">
+                    {/* Animated background elements */}
+                    <div className="absolute inset-0 opacity-30">
+                      <div className="absolute top-8 left-8 w-16 h-16 bg-[hsl(24,100%,48%)]/30 rounded-2xl floating"></div>
+                      <div className="absolute top-16 right-12 w-12 h-12 bg-[hsl(24,100%,48%)]/20 rounded-xl floating-delayed"></div>
+                      <div className="absolute bottom-12 left-16 w-20 h-20 bg-[hsl(24,100%,48%)]/25 rounded-3xl floating"></div>
+                      <div className="absolute bottom-8 right-8 w-14 h-14 bg-[hsl(24,100%,48%)]/35 rounded-2xl floating-delayed"></div>
+                    </div>
+                    
+                    {/* Main content grid */}
+                    <div className="relative z-10 grid grid-cols-3 gap-4 h-full">
+                      <div className="h-16 bg-[hsl(24,100%,48%)]/20 rounded-xl backdrop-blur-sm"></div>
+                      <div className="h-12 bg-[hsl(24,100%,48%)]/30 rounded-xl mt-4 backdrop-blur-sm"></div>
+                      <div className="h-20 bg-[hsl(24,100%,48%)]/10 rounded-xl backdrop-blur-sm"></div>
+                      <div className="h-12 bg-[hsl(24,100%,48%)]/40 rounded-xl backdrop-blur-sm"></div>
+                      <div className="h-16 bg-[hsl(24,100%,48%)]/20 rounded-xl backdrop-blur-sm"></div>
+                      <div className="h-14 bg-[hsl(24,100%,48%)]/30 rounded-xl backdrop-blur-sm"></div>
+                      <div className="h-18 bg-[hsl(24,100%,48%)]/10 rounded-xl backdrop-blur-sm"></div>
+                      <div className="h-10 bg-[hsl(24,100%,48%)]/50 rounded-xl mt-2 backdrop-blur-sm"></div>
+                      <div className="h-16 bg-[hsl(24,100%,48%)]/20 rounded-xl backdrop-blur-sm"></div>
+                    </div>
                   </div>
                 </div>
               </div>
