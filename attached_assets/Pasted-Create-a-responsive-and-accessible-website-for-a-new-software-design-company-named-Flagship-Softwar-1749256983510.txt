@@ -1,0 +1,67 @@
+Create a responsive and accessible website for a new software design company named "Flagship Software." The website should serve as a landing page and include a Products page, a Contact page, and a Blog. The overall aesthetic should be clean, modern, and minimal, drawing inspiration from the design language of Apple and Angular.dev. The company's accent color is orange, which should be used strategically for calls to action.
+
+Overall Design System:
+
+    Theme: A light and airy theme with a significant amount of white space to create a feeling of spaciousness and focus.
+    Color Palette:
+        Primary: White (#FFFFFF) and a very light gray (#F5F5F7) for backgrounds.
+        Text: A dark, near-black color (#1D1D1F) for primary text to ensure high contrast and readability. A slightly lighter gray for secondary text.
+        Accent: A vibrant, accessible orange (#F56600) to be used for all calls-to-action (buttons, links, hover states) to guide the user's attention.
+    Typography:
+        Headlines: A clean, sans-serif font similar to SF Pro Display (used by Apple) or Google Sans. It should be bold and impactful.
+        Body Text: A highly readable sans-serif font, like SF Pro Text or Roboto. The font size should be generous to ensure easy reading.
+    Layout:
+        A consistent and intuitive navigation bar should be present at the top of every page.
+        The layout should be based on a grid system to ensure alignment and consistency across all pages.
+        The website must be fully responsive, providing an excellent user experience on desktops, tablets, and mobile devices.
+    Interactions: Subtle and smooth animations and transitions that enhance the user experience without being distracting.
+
+Page-by-Page Breakdown:
+
+1. Homepage:
+
+    Hero Section: A full-width hero section with a strong, concise headline that communicates Flagship Software's value proposition (e.g., "Designing the Future of Software"). Include a high-quality, abstract image or a subtle background animation that aligns with the modern aesthetic. Feature a prominent call-to-action button with the orange accent color, prompting users to "View Our Products."
+    Introduction: A brief section introducing Flagship Software, its mission, and its expertise.
+    Featured Products: A visually appealing section that showcases 2-3 of the company's key products with high-quality images or mockups, a short description for each, and a link to the full products page.
+    Latest from the Blog: A small section that displays the titles and a brief excerpt of the three most recent blog posts.
+
+2. Products Page:
+
+    Layout: A clean, card-based layout. Each product should have its own card.
+    Product Cards: Each card should feature:
+        A high-quality product image or icon.
+        The product name.
+        A concise, one-sentence summary of the product.
+        A "Learn More" link that takes the user to a dedicated (future) product detail page (for now, this link can be a placeholder).
+    Supporting Information: Above the product cards, include a brief introductory paragraph about Flagship Software's development philosophy.
+
+3. Contact Page:
+
+    Clear Information: The page should be straightforward and easy to navigate.
+    Contact Methods: Provide clear and accessible contact information, including:
+        Email: A clickable email address.
+        Discord: A link to the company's Discord server.
+        Social Media: Links to relevant professional social media profiles (e.g., LinkedIn, Twitter/X).
+    Contact Form (Optional): A simple and accessible contact form with fields for Name, Email, and Message. The "Submit" button should use the orange accent color.
+
+4. Blog Page:
+
+    Feed Layout: A reverse-chronological feed of blog posts.
+    Post Previews: Each post in the feed should display:
+        The blog post title.
+        The publication date.
+        A brief excerpt of the post's content.
+        A "Read More" link that would lead to the full blog post (for now, these can be placeholder links).
+    Styling: Ensure the typography and spacing make the blog content easy to read and scan.
+
+Accessibility and Performance:
+
+    Accessibility: Ensure the website is highly accessible. This includes:
+        Sufficient color contrast for all text.
+        Alt text for all images.
+        Full keyboard navigability.
+        Semantic HTML.
+        Clearly labeled forms and buttons.
+    Performance: The website should be optimized for fast loading times on both desktop and mobile connections.
+
+Please generate the HTML, CSS, and JavaScript to create this website. The code should be clean, well-commented, and follow modern web development best practices.
