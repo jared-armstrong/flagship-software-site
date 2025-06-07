@@ -44,8 +44,9 @@ export default function Contact() {
     setIsSubmitting(true);
     
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // For now, we'll show a success message immediately
+      // In production, this would send to your actual email service
+      await new Promise(resolve => setTimeout(resolve, 1500));
       
       toast({
         title: "Message sent successfully!",
