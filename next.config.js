@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
     domains: ['localhost'],
-    unoptimized: false,
+    unoptimized: true,
   },
   typescript: {
     ignoreBuildErrors: false,
